@@ -12,5 +12,8 @@ module.exports = {
   },
   auth: {
     jwtSecret: process.env.JWT_SECRET || 'nesbootstrap'
+  },
+  policies: {
+    password: /^[a-zA-Z0-9 ]{8,12}$/
   }
 }

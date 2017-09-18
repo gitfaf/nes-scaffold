@@ -1,10 +1,6 @@
 const fs = require('fs')
 const path = require('path')
 const Sequelize = require('sequelize')
-console.log(process.env.NODE_PATH)
-console.log(process.env.NODE_PATH)
-console.log(process.env.NODE_PATH)
-console.log(process.env.NODE_PATH)
 const config = require('configs/local')
 
 const db = {}

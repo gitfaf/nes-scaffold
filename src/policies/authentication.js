@@ -1,11 +1,13 @@
 const Joi = require('joi')
+const config = require('configs/local')
+
+const schema = {
+  email: Joi.string().email(),
+  password: Joi.string().regex(config.policies.password)
+}
 
 module.exports = {
   register (req, res, next) {
-    const schema = {
-      email: Joi.string().email(),
-      password: Joi.string().regex(new RegExp('^[a-zA-Z0-9 ]{16,32}$'))
-    }
     const { error, value } = Joi.validate(req.body, schema)
 
     if (error) {
@@ -19,7 +21,7 @@ module.exports = {
         case 'password':
           res.status(400).send({
             error: `
-            Password must be at least 16 characters and at most 32 characters long.
+            Password must be at least 8 characters and at most 12 characters long.
             <br>Password can contain a to z.
             <br>Password can contain A to Z.
             <br>Password can contain 0 to 9.

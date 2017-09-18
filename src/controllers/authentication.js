@@ -20,11 +20,11 @@ const register = async (req, res) => {
     }
     res.send(data)
   } catch (err) {
-    const message = `User with this email already exists.`
+    const message = constants.ERRORS.register
     res.status(400).send({
       message
     })
-    console.error(`authenticationController.register: ${message}`)
+    console.error(`authentication.register: ${message}`)
   }
 }
 
@@ -37,8 +37,10 @@ const login = async (req, res) => {
       }
     })
     const error403 = () => {
+      const message = `${constants.ERRORS.login.invalidPassword} ${user.email}`
+      console.error(message)
       res.status(403).send({
-        error: `${user.email} is not logged in. Try again!`
+        error: message
       })
     }
     if (user) {
@@ -60,7 +62,7 @@ const login = async (req, res) => {
   } catch (error) {
     console.log(error)
     res.status(500).send({
-      error: `An error as occurred. Try again!`
+      error: constants.ERRORS.login.serverError
     })
   }
 }
