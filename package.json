@@ -1,14 +1,25 @@
 {
-  "name": "server",
+  "name": "nes-scaffold",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Scaffold Node Express Sqlite app for quick development",
+  "main": "src/app.js",
   "scripts": {
     "start": "./node_modules/nodemon/bin/nodemon.js src/app.js --exec 'npm run lint && node'",
     "lint": "./node_modules/.bin/eslint **/*.js"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "node",
+    "express",
+    "sqlite",
+    "node express sqlite example",
+    "sqlite node example",
+    "sqlite express example",
+    "sqlite node scaffold",
+    "sqlite express scaffold",
+    "sqlite node express scaffold",
+    "sqlite node express joi JWT token "
+  ],
+  "author": "Git Faf <git.faf@gmail.com>",
   "license": "MIT",
   "dependencies": {
     "bcrypt-nodejs": "0.0.3",
