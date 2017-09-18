@@ -1,6 +1,6 @@
 {
   "name": "nes-scaffold",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Scaffold Node Express Sqlite app for quick development",
   "main": "src/app.js",
   "scripts": {

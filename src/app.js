@@ -1,4 +1,5 @@
 require('node-path-choice').blatant(__dirname)
+require('common/logger').installConsole(__dirname, __filename)
 
 const bodyParser = require('body-parser')
 const cors = require('cors')

@@ -1,3 +1,4 @@
+require('common/logger').installConsole(__dirname, __filename)
 const Joi = require('joi')
 const config = require('configs/local')
 
