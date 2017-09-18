@@ -13,7 +13,6 @@ A simple project to bootstrap your hackathon development.
 
 ```
 
-
 ## License
 
 MIT &copy; Git Faf 2017

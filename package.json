@@ -1,6 +1,6 @@
 {
   "name": "nes-scaffold",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Scaffold Node Express Sqlite app for quick development",
   "main": "src/app.js",
   "scripts": {
@@ -27,6 +27,7 @@
     "body-parser": "^1.18.0",
     "cors": "^2.8.4",
     "express": "^4.15.4",
+    "extended-logger": "^9007199254740991.9007199254740991.9007199254740991",
     "joi": "^11.0.1",
     "jsonwebtoken": "^8.0.0",
     "morgan": "^1.8.2",

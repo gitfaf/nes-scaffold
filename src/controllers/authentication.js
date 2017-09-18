@@ -1,4 +1,4 @@
-require('common/logger').installConsole(__dirname, __filename)
+require('extended-logger').installConsole(__dirname, __filename)
 const {User} = require('models/')
 const jwt = require('jsonwebtoken')
 const config = require('configs/local')

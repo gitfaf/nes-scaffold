@@ -1,4 +1,4 @@
-require('common/logger').installConsole(__dirname, __filename)
+require('extended-logger').installConsole(__dirname, __filename)
 const Joi = require('joi')
 const config = require('configs/local')
 
