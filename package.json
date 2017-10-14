@@ -1,6 +1,6 @@
 {
   "name": "nes-scaffold",
-  "version": "1.2.0",
+  "version": "2.0.0",
   "description": "Scaffold Node Express Sqlite app for quick development",
   "main": "src/app.js",
   "scripts": {
@@ -22,26 +22,26 @@
   "author": "Git Faf <git.faf@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "bcrypt-nodejs": "0.0.3",
-    "bluebird": "^3.5.0",
-    "body-parser": "^1.18.0",
-    "cors": "^2.8.4",
-    "express": "^4.15.4",
-    "extended-logger": "^9007199254740991.9007199254740991.9007199254740991",
-    "joi": "^11.0.1",
-    "jsonwebtoken": "^8.0.0",
-    "morgan": "^1.8.2",
-    "node-path-choice": "^1.0.1",
-    "sequelize": "^4.8.2",
-    "sqlite3": "^3.1.10"
+    "joi": "*",
+    "cors": "*",
+    "morgan": "*",
+    "sqlite3": "*",
+    "express": "*",
+    "bluebird": "*",
+    "sequelize": "*",
+    "body-parser": "*",
+    "jsonwebtoken": "*",
+    "bcrypt-nodejs": "*",
+    "extended-logger": "*",
+    "node-path-choice": "*"
   },
   "devDependencies": {
-    "eslint": "^4.6.1",
-    "nodemon": "^1.12.0",
-    "eslint-config-standard": "^10.2.1",
-    "eslint-plugin-import": "^2.7.0",
-    "eslint-plugin-node": "^5.1.1",
-    "eslint-plugin-promise": "^3.5.0",
-    "eslint-plugin-standard": "^3.0.1"
+    "eslint": "*",
+    "nodemon": "*",
+    "eslint-plugin-node": "*",
+    "eslint-plugin-import": "*",
+    "eslint-plugin-promise": "*",
+    "eslint-config-standard": "*",
+    "eslint-plugin-standard": "*"
   }
 }
